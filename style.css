@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: #fff;
+    padding: 0 08px 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+}
+
+.nav-logo img {
+    width: 85px;
+    height: auto;
+}
+
+.header-icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    border-radius: 50%; /* Optional: circle background on hover */
+}
+
+
+
+.icon img,
+.icon svg {
+    height: 24px;
+    width: 24px;
+    display: block;
+}
+
+
