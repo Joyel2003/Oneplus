@@ -1,3 +1,18 @@
+@font-face {
+    font-family: Oneplus;
+    src: url(font/OnePlusSans3.0En-VF.woff2);
+}
+
+@font-face {
+    font-family: "download1";
+    src: url(font/download\ \(1\));
+}
+
+@font-face {
+    font-family: "download";
+    src: url(font/download);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +31,7 @@
 
 .nav-logo img {
     width: 85px;
-    height: auto;
+    height: 24px;
 }
 
 .header-icon {
@@ -32,7 +47,8 @@
     width: 40px;
     cursor: pointer;
     transition: transform 0.2s ease, background-color 0.2s ease;
-    border-radius: 50%; /* Optional: circle background on hover */
+    border-radius: 50%;
+    /* Optional: circle background on hover */
 }
 
 
@@ -44,4 +60,50 @@
     display: block;
 }
 
+.nav-box {
+    background-color: #fff;
+    padding-top: 24px;
+    margin-bottom: 0;
+}
 
+.nav-li {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    /* padding-bottom: 4px; */
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    overflow-x: auto;
+}
+.nav-li::-webkit-scrollbar{
+    display: none;
+}
+
+.nav-box-li {
+    padding-bottom: 4px;
+    min-width: 100px;
+    height: 102px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-box-li:nth-child(3){
+   border-bottom: 1px solid red;
+}
+
+.nav-box-li img {
+    width: 36px;
+    height: 36px;
+}
+
+.nav-box-li p {
+    font-family: Oneplus;
+    white-space: nowrap;
+    margin-top: 15px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
