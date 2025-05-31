@@ -194,6 +194,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 32px;
 }
 
 .main-products-one img {
@@ -218,3 +219,92 @@
     color: #f50514;
 }
 
+.footer{
+    padding: 24px 16px;
+    background-color: black;
+    border-top: 1px rgba(0,0,0,0.1) solid;
+    display: block;
+}
+.footer-text{
+    min-width: 250px;
+    max-width: 1312px;
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 0;
+}
+.footer-home{
+    width: 100%;
+    display: flex;  
+    margin: 0 0 40px 0;
+}
+.home{
+    color: #fff;
+    font-size: 14px;
+    font-family: Oneplus;
+    font-weight: 400;
+}
+.tab{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: flex-end;
+}
+.tab span{
+    color: #fff;
+    font-size: 14px;
+    font-family: oneplus;
+    font-weight: 400;
+    margin: 0 4px;
+}
+.tab img{
+    width: 16px;
+    height: 16px;
+}
+/* -------bottom------ */
+.bottom-container{
+    margin-top: 8px;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.policy{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+     list-style: none;
+
+}
+.policy-li{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    padding-right: 12px;
+    height: 11px;
+}
+.policy-li span{
+    color: #828282;
+    font-size: 12px;
+    font-family: Oneplus;
+    padding-right: 12px;
+     margin-right: 12px;
+    font-weight: 400;
+    border-right: 1px solid #333333;
+    line-height: 11px;
+}
+.copyright{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.reserved{
+    margin: 8px 0;
+    padding: 0;
+}
+.reserved span{
+    color: #828282;
+    font-size: 12px;
+    font-family: Oneplus;
+}
