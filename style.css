@@ -219,13 +219,14 @@
     color: #f50514;
 }
 
-.footer{
+.footer {
     padding: 24px 16px;
     background-color: black;
-    border-top: 1px rgba(0,0,0,0.1) solid;
+    border-top: 1px rgba(0, 0, 0, 0.1) solid;
     display: block;
 }
-.footer-text{
+
+.footer-text {
     min-width: 250px;
     max-width: 1312px;
     display: block;
@@ -233,18 +234,20 @@
     width: 100%;
     padding: 0;
 }
-.footer-home{
+
+.footer-home {
     width: 100%;
-    display: flex;  
+    display: flex;
     margin: 0 0 40px 0;
 }
-.home{
+
+.home {
     color: #fff;
     font-size: 14px;
     font-family: Oneplus;
-    font-weight: 400;
 }
-.tab{
+
+.tab {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
@@ -252,58 +255,254 @@
     list-style: none;
     align-items: flex-end;
 }
-.tab span{
+
+.tab span {
     color: #fff;
     font-size: 14px;
     font-family: oneplus;
     font-weight: 400;
     margin: 0 4px;
 }
-.tab img{
+
+.tab img {
     width: 16px;
     height: 16px;
 }
+
 /* -------bottom------ */
-.bottom-container{
+.bottom-container {
     margin-top: 8px;
     margin: 0;
     padding: 0;
     display: block;
 }
-.policy{
+
+.footer-links-section details {
+    border-bottom: 1px solid #333;
+    padding: 12px 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 200;
+    font-family: Oneplus;
+}
+
+.footer-links-section summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.support-link {
+    margin: 20px 0;
+}
+
+.support-link a {
+    color: #fff;
+    font-size: 16px;
+    /* font-weight: bold; */
+    text-decoration: none;
+    font-family: Oneplus;
+}
+
+.support-link img {
+    height: 20px;
+    width: 20px;
+}
+
+.media-main {
+    display: flex;
+}
+
+.media-site {
+    width: 111.41;
+    justify-content: space-between;
+
+    display: flex;
+    align-items: center;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #333333;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.site {
+    display: flex;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 24px;
+    align-items: self-end;
+    font-size: 14px;
+    font-family: Oneplus;
+}
+
+.globe::before {
+    font-size: 24px;
+    content: "\E006";
+    font-family: download1;
+}
+
+.social-media {
+    line-height: 0;
+    height: 24px;
+    margin-bottom: 24px;
+}
+
+.social-media::before {
+    content: "\E004";
+    font-family: download1;
+    color: #828282;
+    line-height: 1;
+    font-size: 24px;
+}
+
+.twitter-media {
+    line-height: 0;
+    height: 24px;
+    margin-bottom: 24px;
+    margin-left: 16px;
+}
+
+.twitter-media::before {
+    content: "\E00B";
+    font-family: download1;
+    color: #828282;
+    line-height: 1;
+    font-size: 24px;
+}
+
+.insta-media {
+    line-height: 0;
+    height: 24px;
+    margin-bottom: 24px;
+    margin-left: 16px;
+}
+
+.insta-media::before {
+    content: "\E005";
+    font-family: download1;
+    color: #828282;
+    line-height: 1;
+    font-size: 24px;
+}
+
+.payment-box {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-     list-style: none;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.credit {
+    color: #828282;
+    font-size: 12px;
+    font-family: Oneplus;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    margin-bottom: 8px;
+}
+
+.credit::before {
+    content: "\E002";
+    font-family: download1;
+    font-size: 24px;
+}
+
+.credit-bank {
+    color: #828282;
+    font-size: 12px;
+    font-family: Oneplus;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    margin-bottom: 8px;
+}
+
+.credit-bank::before {
+    content: "\E009";
+    font-family: download1;
+    font-size: 24px;
+}
+
+.credit-emi {
+    color: #828282;
+    font-size: 12px;
+    font-family: Oneplus;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    margin-bottom: 8px;
+}
+
+.credit-emi::before {
+    content: "\E003";
+    font-family: download1;
+    font-size: 24px;
+}
+
+.credit-wallet {
+    color: #828282;
+    font-size: 12px;
+    font-family: Oneplus;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.credit-wallet::before {
+    content: "\E00D";
+    font-family: download1;
+    font-size: 24px;
+}
+
+.policy {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
 
 }
-.policy-li{
+
+.policy-li {
     margin-top: 8px;
     display: flex;
     align-items: center;
     padding-right: 12px;
     height: 11px;
 }
-.policy-li span{
+
+.policy-li span {
     color: #828282;
     font-size: 12px;
     font-family: Oneplus;
     padding-right: 12px;
-     margin-right: 12px;
+    margin-right: 12px;
     font-weight: 400;
     border-right: 1px solid #333333;
     line-height: 11px;
 }
-.copyright{
+
+.copyright {
     margin: 0;
     padding: 0;
     display: block;
 }
-.reserved{
+
+.reserved {
     margin: 8px 0;
     padding: 0;
 }
-.reserved span{
+
+.reserved span {
     color: #828282;
     font-size: 12px;
     font-family: Oneplus;
