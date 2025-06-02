@@ -188,6 +188,7 @@
 
 .main-products-one {
     width: 48.78%;
+    margin-top: 16px;
 }
 
 .products-content {
@@ -207,17 +208,40 @@
 .product-image {
     background-color: #f8f8f8;
 }
+.description{
+    padding: 8px 0px 0px 0px;
+}
 
 .description h3 {
+    /* padding-top: 4px;
+    padding-bottom: 4px; */
     font-family: Oneplus;
     font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+.discount {
+    color: red;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Oneplus;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.mrp{
+    color: rgba(0, 0, 0, 0.95);
+    font-size: 14px;
+    font-weight: 400;
+    font-weight: 400;
+    font-family: Oneplus;
+}
+.price{
+    color: #999;
+    font-size: 10px;
+    text-decoration: line-through;
+    font-weight: 400;
 }
 
-.description p {
-    font-size: 12px;
-    font-family: Oneplus;
-    color: #f50514;
-}
 
 .footer {
     padding: 24px 16px;
@@ -239,6 +263,11 @@
     width: 100%;
     display: flex;
     margin: 0 0 40px 0;
+}
+.summary{
+    font-weight: 400;
+    font-family: Oneplus;
+    font-size: 16px;
 }
 
 .home {
