@@ -180,6 +180,7 @@
     width: 100%;
     padding-left: 16px;
     padding-right: 16px;
+    margin-top: 4px;
     /* margin: 0;
     padding: 0;
     font-weight: 400;
@@ -189,6 +190,7 @@
 .main-products-one {
     width: 48.78%;
     margin-top: 16px;
+    margin-bottom: 4px;
 }
 
 .products-content {
@@ -212,6 +214,9 @@
     padding: 8px 0px 0px 0px;
 }
 
+.main-products-one:nth-child(3){
+     margin-top: 20px;
+}
 .description h3 {
     /* padding-top: 4px;
     padding-bottom: 4px; */
@@ -235,10 +240,17 @@
     font-weight: 400;
     font-family: Oneplus;
 }
+
+
 .price{
     color: #999;
     font-size: 10px;
     text-decoration: line-through;
+    font-weight: 400;
+    font-family: Oneplus;
+}
+.details{
+    padding-top: 12px;
     font-weight: 400;
 }
 
@@ -308,7 +320,7 @@
 
 .footer-links-section details {
     border-bottom: 1px solid #333;
-    padding: 12px 0;
+    /* padding: 12px 0; */
     cursor: pointer;
     color: #fff;
     font-size: 16px;
@@ -316,17 +328,22 @@
     font-family: Oneplus;
 }
 
+
 .footer-links-section summary {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 16px;
+    font-family: Oneplus;
+    padding: 16px 36px 16px 0;
+    line-height: 20px;
 }
 
 
 .support-link {
-    margin: 20px 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .support-link a {
@@ -340,6 +357,7 @@
 .support-link img {
     height: 20px;
     width: 20px;
+    margin-bottom: -2px;
 }
 
 .media-main {
@@ -356,7 +374,7 @@
     border-bottom: 1px solid #333333;
     flex-wrap: wrap;
     margin: 0;
-    padding: 0;
+    padding-bottom: 18px;
 }
 
 .site {
@@ -372,6 +390,7 @@
     font-size: 24px;
     content: "\E006";
     font-family: download1;
+    margin-right: 4px;
 }
 
 .social-media {
@@ -392,7 +411,7 @@
     line-height: 0;
     height: 24px;
     margin-bottom: 24px;
-    margin-left: 16px;
+    margin-left: 20px;
 }
 
 .twitter-media::before {
@@ -407,7 +426,7 @@
     line-height: 0;
     height: 24px;
     margin-bottom: 24px;
-    margin-left: 16px;
+    margin-left: 20px;
 }
 
 .insta-media::before {
@@ -423,7 +442,7 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 35px;
 }
 
 .credit {
@@ -441,6 +460,7 @@
     content: "\E002";
     font-family: download1;
     font-size: 24px;
+    margin-right: 5px;
 }
 
 .credit-bank {
@@ -458,6 +478,7 @@
     content: "\E009";
     font-family: download1;
     font-size: 24px;
+    margin-right: 5px;
 }
 
 .credit-emi {
@@ -475,6 +496,7 @@
     content: "\E003";
     font-family: download1;
     font-size: 24px;
+    margin-right: 5px;
 }
 
 .credit-wallet {
@@ -491,14 +513,16 @@
     content: "\E00D";
     font-family: download1;
     font-size: 24px;
+    margin-right: 5px;
 }
-
+/* .bottom-container{
+    margin-top: 8px;
+}
 .policy {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
-
 }
 
 .policy-li {
@@ -507,6 +531,7 @@
     align-items: center;
     padding-right: 12px;
     height: 11px;
+    margin-right: 12px;
 }
 
 .policy-li span {
@@ -535,5 +560,39 @@
     color: #828282;
     font-size: 12px;
     font-family: Oneplus;
+} */
+.bottom-container{
+    margin-top: 8px;
+    font-weight: 400;
+    text-align: left;
 }
-
+.bottom-container ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.bottom-container li{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+    padding-right: 12px;
+    height: 11px;
+    border-right: 1px solid #333;
+}
+.bottom-container span{
+    background-color: transparent;
+    color: #828282;
+    font-weight: 400;
+    font-family: Oneplus;
+    font-size: 11px;
+}
+.reserved{
+    margin: 8px 0;
+    font-family: Oneplus;
+    font-weight: 400;
+    text-align: left;
+    display: block;
+    color: #828282;
+    font-size: 12px;
+}
