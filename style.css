@@ -214,7 +214,6 @@
     font-family: Oneplus;
     margin-left: 8px;
     font-weight: 400;
-
 }
 
 .products-content {
@@ -687,6 +686,10 @@
     }
     .sort-box{
         display: none;
+    }
+    .side-parent{
+        display: flex;
+        
     }
     
 }
