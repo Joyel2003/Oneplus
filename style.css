@@ -178,7 +178,7 @@
 .side-bar{
     width: 26.18%;
     padding: 32px 40px 32px 64px;
-    border-right: 1px solid #050505;
+    border-right: 1px solid #eaeaea;
 }
 .side-list{
     margin: 0;
@@ -656,6 +656,11 @@
     color: #828282;
     font-size: 12px;
 }
+@media (min-width: 375px) {
+    .side-bar{
+        display: none;
+    }
+}
 
 @media (min-width: 650px) {
     .products-content {
@@ -689,7 +694,9 @@
     }
     .side-parent{
         display: flex;
-        
+    }
+    .side-bar{
+        display: block;
     }
     
 }
