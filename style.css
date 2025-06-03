@@ -175,6 +175,47 @@
     background-repeat: no-repeat;
     align-items: center;
 }
+.side-bar{
+    width: 26.18%;
+    padding: 32px 40px 32px 64px;
+    border-right: 1px solid #050505;
+}
+.side-list{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+}
+.sort-checkbox{
+    margin-bottom: 48px;
+    box-sizing: border-box;
+    display: block;
+}
+.sort-text{
+    font-family: Oneplus;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.sort-main{
+    display: flex;
+    margin-top: 12px;
+    align-items: center;
+}
+.field{
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+.in-stock{
+    font-size: 14px;
+    font-family: Oneplus;
+    margin-left: 8px;
+    font-weight: 400;
+
+}
 
 .products-content {
     width: 100%;
@@ -621,4 +662,31 @@
     .products-content {
         grid-template-columns: repeat(3, 1fr); 
     }
+}
+@media (min-width: 1024px) {
+    .champ div{
+        width: 128px;
+        height: 127px;
+        padding-bottom: 35px;
+        border-bottom: 1px solid #ebebeb;
+    }
+    .champ img{
+        width: 56px;
+        height: 56px;
+    }
+    .champ p{
+        padding: 0px 14px;
+    }
+    .product-image{
+        width: 214.81px;
+        height: 214.81px;
+    }
+    .main-products-one img{
+        width: 188.81px;
+        height: 188.81px;
+    }
+    .sort-box{
+        display: none;
+    }
+    
 }
