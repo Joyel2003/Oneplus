@@ -71,6 +71,8 @@
 
 .nav-li {
     display: flex;
+    max-width: 1172.52px;
+    margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
     /* padding-bottom: 4px; */
@@ -78,10 +80,6 @@
     align-items: center;
     list-style: none;
     overflow-x: auto;
-}
-
-.nav-li::-webkit-scrollbar {
-    display: none;
 }
 
 .nav-box-li {
