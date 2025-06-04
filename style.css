@@ -173,6 +173,25 @@
     background-repeat: no-repeat;
     align-items: center;
 }
+.filter-box{
+    height: 18px;
+    width: 100%;
+}
+.rank-main{
+    display: flex;
+    justify-content: space-between;
+}
+.rank-sort{
+    display: flex;
+    align-items: center;
+}
+.rank-sort p{
+    color: rgba(0,0,0,0.55);
+    margin-right: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Oneplus;
+}
 .side-bar{
     width: 26.18%;
     padding: 32px 40px 32px 64px;
@@ -695,6 +714,9 @@
     }
     .side-bar{
         display: block;
+    }
+    .products-content{
+        padding: 14px 64px 64px 20px;
     }
     
 }
