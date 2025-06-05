@@ -712,6 +712,12 @@
     .side-bar {
         display: none;
     }
+    .rank-main{
+        display: none;
+    }
+    .filter-box{
+        display: none;
+    }
 }
 
 @media (min-width: 650px) {
