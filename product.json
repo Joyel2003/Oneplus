@@ -5,7 +5,7 @@
         "mrp": "₹11,999",
         "price": "₹8,999",
         "category": "accessories",
-        "stock":"true",
+        "stock":true,
         "image":"images/image1.webp"
     },
     {
@@ -14,7 +14,7 @@
         "mrp": "₹36,999",
         "price":"₹44,999",
         "category":"tablet",
-        "stock":"true",
+        "stock":true,
         "image":"images/image2.webp"
     },
     {
@@ -23,14 +23,14 @@
         "mrp":"₹5,499",
         "price":"₹7,499",
         "category":"accessories",
-        "stock":"true",
+        "stock":true,
         "image":"images/image3.webp"
     },
     {
         "name":"OnePlus Go Folio Case",
         "mrp":"₹1,399",
         "category":"accessories",
-        "stock":"true",
+        "stock":true,
         "image":"images/image4.png"
     },
     {
@@ -39,7 +39,7 @@
         "mrp":"From ₹17,999",
         "price":"₹19,999",
         "category":"tablet",
-        "stock":"true",
+        "stock":true,
         "image":"images/image5.webp"
     },
     {
@@ -48,7 +48,7 @@
         "mrp":"₹1,499",
         "price":"2,999",
         "category":"accessories",
-        "stock":"false",
+        "stock":false,
         "image":"images/image6.png"
     }
 ]
