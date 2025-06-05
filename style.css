@@ -784,6 +784,12 @@
     .products-content {
         padding: 14px 64px 64px 20px;
     }
+    .filter-box{
+        display: block;
+    }
+    .rank-main{
+        display: flex;
+    }
 
     .rank-parent {
         flex: 1;

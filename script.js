@@ -1,29 +1,29 @@
 let allProducts = [];
 
 document.addEventListener('DOMContentLoaded', () => {
-  const stockFilter = document.getElementById("stockFilter");
-  const tabletFilter = document.getElementById("tabletFilter");
-  const accessoryFilter = document.getElementById("accessoryFilter");
-  const productContainer = document.getElementById("productContainer");
+    const stockFilter = document.getElementById("stockFilter");
+    const tabletFilter = document.getElementById("tabletFilter");
+    const accessoryFilter = document.getElementById("accessoryFilter");
+    const productContainer = document.getElementById("productContainer");
 
-  fetch('product.json')
-    .then(response => response.json())
-    .then(data => {
-      allProducts = data;
-      renderProducts(allProducts); 
-    })
-    .catch(error => console.error('Error fetching products:', error));
+    fetch('product.json')
+        .then(response => response.json())
+        .then(data => {
+            allProducts = data;
+            renderProducts(allProducts);
+        })
+        .catch(error => console.error('Error fetching products:', error));
 
-  function renderProducts(products){
-    productContainer.innerHTML = '';
+    function renderProducts(products) {
+        productContainer.innerHTML = '';
 
-    if (products.length === 0) {
-      productContainer.innerHTML = '<p>No products found.</p>';
-      return;
-    }
+        if (products.length === 0) {
+            productContainer.innerHTML = '<p>No products found.</p>';
+            return;
+        }
 
-    products.forEach(product => {
-      const productHTML = `
+        products.forEach(product => {
+            const productHTML = `
         <div class="main-products-one">
           <div class="product-image">
             <img src="${product.image}" alt="${product.name}">
@@ -38,33 +38,36 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
       `;
-      productContainer.insertAdjacentHTML('beforeend', productHTML);
-    });
-  }
+            productContainer.insertAdjacentHTML('beforeend', productHTML);
+        });
+    }
 
-  function filterProducts() {
-    const showStock = stockFilter.checked;
-    const showTablet = tabletFilter.checked;
-    const showAccessories = accessoryFilter.checked;
+    function filterProducts() {
+        const showStock = stockFilter.checked;
+        const showTablet = tabletFilter.checked;
+        const showAccessories = accessoryFilter.checked;
 
-    const filtered = allProducts.filter(product => {
-      const matchStock = !showStock || product.stock === true;
+        const filtered = allProducts.filter(product => {
+            const matchStock = !showStock || product.stock === true;
 
-      let matchCategory = true;
-      if (showTablet || showAccessories) {
-        const category = product.category.toLowerCase();
-        matchCategory =
-          (showTablet && category === "tablet") ||
-          (showAccessories && category === "accessories");
-      }
+            let matchCategory = true;
+            if (showTablet || showAccessories) {
+                const category = product.category.toLowerCase();
+                matchCategory =
+                    (showTablet && category === "tablet") ||
+                    (showAccessories && category === "accessories");
+            }
 
-      return matchStock && matchCategory;
-    });
+            return matchStock && matchCategory;
+        });
 
-    renderProducts(filtered);
-  }
+        renderProducts(filtered);
+    }
 
-  stockFilter.addEventListener("change", filterProducts);
-  tabletFilter.addEventListener("change", filterProducts);
-  accessoryFilter.addEventListener("change", filterProducts);
+    stockFilter.addEventListener("change", filterProducts);
+    tabletFilter.addEventListener("change", filterProducts);
+    accessoryFilter.addEventListener("change", filterProducts);
 });
+
+
+

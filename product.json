@@ -2,8 +2,8 @@
     {
         "name": "OnePlus Pad Smart Keyboard",
         "discount": "29% off",
-        "mrp": "₹11,999",
-        "price": "₹8,999",
+        "mrp": "11,999",
+        "price": "8,999",
         "category": "accessories",
         "stock":true,
         "image":"images/image1.webp"
@@ -11,8 +11,8 @@
     {
         "name": "OnePlus Pad 2",
         "discount": "up to 17% off",
-        "mrp": "₹36,999",
-        "price":"₹44,999",
+        "mrp": "36,999",
+        "price":"44,999",
         "category":"tablet",
         "stock":true,
         "image":"images/image2.webp"
@@ -20,15 +20,15 @@
     {
         "name":"OnePlus Stylo 2",
         "discount":"26% off",
-        "mrp":"₹5,499",
-        "price":"₹7,499",
+        "mrp":"5,499",
+        "price":"7,499",
         "category":"accessories",
         "stock":true,
         "image":"images/image3.webp"
     },
     {
         "name":"OnePlus Go Folio Case",
-        "mrp":"₹1,399",
+        "mrp":"1,399",
         "category":"accessories",
         "stock":true,
         "image":"images/image4.png"
@@ -36,8 +36,8 @@
     {
         "name":"OnePlus Pad Go",
         "discount":"up to 10% off",
-        "mrp":"From ₹17,999",
-        "price":"₹19,999",
+        "mrp":"From 17,999",
+        "price":"19,999",
         "category":"tablet",
         "stock":true,
         "image":"images/image5.webp"
@@ -45,7 +45,7 @@
     {
         "name":"OnePlus Folio Case 2",
         "discount":"50% off",
-        "mrp":"₹1,499",
+        "mrp":"1,499",
         "price":"2,999",
         "category":"accessories",
         "stock":false,
