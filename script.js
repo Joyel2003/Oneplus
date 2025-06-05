@@ -1,29 +1,35 @@
 let allProducts = [];
 
 document.addEventListener('DOMContentLoaded', () => {
-    const stockFilter = document.getElementById("stockFilter");
-    const tabletFilter = document.getElementById("tabletFilter");
-    const accessoryFilter = document.getElementById("accessoryFilter");
-    const productContainer = document.getElementById("productContainer");
+  const stockFilter = document.getElementById("stockFilter");
+  const tabletFilter = document.getElementById("tabletFilter");
+  const accessoryFilter = document.getElementById("accessoryFilter");
+  const productContainer = document.getElementById("productContainer");
+  const rankSelect = document.getElementById("rankSelect");
 
-    fetch('product.json')
-        .then(response => response.json())
-        .then(data => {
-            allProducts = data;
-            renderProducts(allProducts);
-        })
-        .catch(error => console.error('Error fetching products:', error));
+  fetch('product.json')
+    .then(response => response.json())
+    .then(data => {
+      allProducts = data;
+      applyFiltersAndSort();
+    })
+    .catch(error => console.error('Error fetching products:', error));
 
-    function renderProducts(products) {
-        productContainer.innerHTML = '';
+  function getNumeric(val) {
+    if (!val) return 0;
+    return parseFloat(val.toString().replace(/[^0-9.]/g, ""));
+  }
 
-        if (products.length === 0) {
-            productContainer.innerHTML = '<p>No products found.</p>';
-            return;
-        }
+  function renderProducts(products) {
+    productContainer.innerHTML = '';
 
-        products.forEach(product => {
-            const productHTML = `
+    if (products.length === 0) {
+      productContainer.innerHTML = '<p>No products found.</p>';
+      return;
+    }
+
+    products.forEach(product => {
+      const productHTML = `
         <div class="main-products-one">
           <div class="product-image">
             <img src="${product.image}" alt="${product.name}">
@@ -38,36 +44,44 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
       `;
-            productContainer.insertAdjacentHTML('beforeend', productHTML);
-        });
+      productContainer.insertAdjacentHTML('beforeend', productHTML);
+    });
+  }
+
+  function applyFiltersAndSort() {
+    const showStock = stockFilter.checked;
+    const showTablet = tabletFilter.checked;
+    const showAccessories = accessoryFilter.checked;
+
+    let filtered = allProducts.filter(product => {
+      const matchStock = !showStock || product.stock === true;
+
+      let matchCategory = true;
+      if (showTablet || showAccessories) {
+        const category = product.category.toLowerCase();
+        matchCategory =
+          (showTablet && category === "tablet") ||
+          (showAccessories && category === "accessories");
+      }
+
+      return matchStock && matchCategory;
+    });
+
+    const value = rankSelect.value;
+
+    if (value === "low-to-high") {
+      filtered.sort((a, b) => getNumeric(a.mrp) - getNumeric(b.mrp));
+    } else if (value === "high-to-low") {
+      filtered.sort((a, b) => getNumeric(b.mrp) - getNumeric(a.mrp));
+    } else if (value === "newest") {
+      filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
     }
 
-    function filterProducts() {
-        const showStock = stockFilter.checked;
-        const showTablet = tabletFilter.checked;
-        const showAccessories = accessoryFilter.checked;
+    renderProducts(filtered);
+  }
 
-        const filtered = allProducts.filter(product => {
-            const matchStock = !showStock || product.stock === true;
-
-            let matchCategory = true;
-            if (showTablet || showAccessories) {
-                const category = product.category.toLowerCase();
-                matchCategory =
-                    (showTablet && category === "tablet") ||
-                    (showAccessories && category === "accessories");
-            }
-
-            return matchStock && matchCategory;
-        });
-
-        renderProducts(filtered);
-    }
-
-    stockFilter.addEventListener("change", filterProducts);
-    tabletFilter.addEventListener("change", filterProducts);
-    accessoryFilter.addEventListener("change", filterProducts);
+  stockFilter.addEventListener("change", applyFiltersAndSort);
+  tabletFilter.addEventListener("change", applyFiltersAndSort);
+  accessoryFilter.addEventListener("change", applyFiltersAndSort);
+  rankSelect.addEventListener("change", applyFiltersAndSort);
 });
-
-
-

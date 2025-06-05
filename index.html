@@ -128,7 +128,7 @@
                         <p>Availability</p>
                     </div>
                     <div class="sort-main">
-                        <input class="field" type="checkbox"  id="stockFilter">
+                        <input class="field" type="checkbox" id="stockFilter">
                         <p class="in-stock">In Stock</p>
                     </div>
                 </div>
@@ -148,19 +148,20 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <div class="rank-parent">
             <div class="filter-box"></div>
             <div class="rank-main">
                 <div class="rank-sort">
                     <p>Rank by</p>
-                    <select class="rank-selection">
-                        <option>Recommended</option>
-                        <option>Newest</option>
-                        <option>Price(Low to High)</option>
-                        <option>price(High to Low)</option>
+                    <select id="rankSelect" class="rank-selection">
+                        <option value="recommended">Recommended</option>
+                        <option value="newest">Newest</option>
+                        <option value="low-to-high">Price (Low to High)</option>
+                        <option value="high-to-low">Price (High to Low)</option>
                     </select>
+
                 </div>
             </div>
             <div class="products-content" id="productContainer">
@@ -260,4 +261,3 @@
 </body>
 
 </html>
-

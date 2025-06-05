@@ -6,7 +6,8 @@
         "price": "8,999",
         "category": "accessories",
         "stock":true,
-        "image":"images/image1.webp"
+        "image":"images/image1.webp",
+        "date": "2025-05-12"
     },
     {
         "name": "OnePlus Pad 2",
@@ -15,7 +16,8 @@
         "price":"44,999",
         "category":"tablet",
         "stock":true,
-        "image":"images/image2.webp"
+        "image":"images/image2.webp",
+        "date": "2023-04-09"
     },
     {
         "name":"OnePlus Stylo 2",
@@ -24,14 +26,16 @@
         "price":"7,499",
         "category":"accessories",
         "stock":true,
-        "image":"images/image3.webp"
+        "image":"images/image3.webp",
+        "date": "2023-01-01"
     },
     {
         "name":"OnePlus Go Folio Case",
         "mrp":"1,399",
         "category":"accessories",
         "stock":true,
-        "image":"images/image4.png"
+        "image":"images/image4.png",
+        "date": "2024-01-25"
     },
     {
         "name":"OnePlus Pad Go",
@@ -40,7 +44,8 @@
         "price":"19,999",
         "category":"tablet",
         "stock":true,
-        "image":"images/image5.webp"
+        "image":"images/image5.webp",
+        "date":"2020-12-25"
     },
     {
         "name":"OnePlus Folio Case 2",
@@ -49,6 +54,7 @@
         "price":"2,999",
         "category":"accessories",
         "stock":false,
-        "image":"images/image6.png"
+        "image":"images/image6.png",
+        "date":"2025-06-01"
     }
 ]
