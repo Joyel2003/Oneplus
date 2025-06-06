@@ -85,3 +85,15 @@ document.addEventListener('DOMContentLoaded', () => {
   accessoryFilter.addEventListener("change", applyFiltersAndSort);
   rankSelect.addEventListener("change", applyFiltersAndSort);
 });
+
+document.querySelectorAll('.footer-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const list = header.nextElementSibling;
+      const plus = header.querySelector('.plus-icon');
+      const isOpen = list.style.display === 'block';
+
+      list.style.display = isOpen ? 'none' : 'block';
+
+      plus.textContent = isOpen ? '+' : '–';
+    });
+  });

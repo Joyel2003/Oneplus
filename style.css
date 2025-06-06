@@ -402,37 +402,51 @@
     display: block;
 }
 
-.footer-links-section details {
-    border-bottom: 1px solid #333;
-    /* padding: 12px 0; */
-    cursor: pointer;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 200;
-    font-family: Oneplus;
+.footer-links-section {
+  background: #000;
+  color: #fff;
+  padding: 20px;
 }
 
+/* Footer columns default to stacked (mobile) */
+.footer-column {
+  border-bottom: 1px solid #333;
+  padding: 12px 0;
+}
 
-.footer-links-section summary {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 400;
-    font-size: 16px;
-    font-family: Oneplus;
-    padding: 16px 36px 16px 0;
-    line-height: 20px;
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
 }
-.footer-nav{
-    list-style: none;
-    height: auto ;
+
+.footer-header h4 {
+  font-size: 16px;
+  margin: 0;
 }
-.footer-nav li{
-    color: #828282;
-    font-size: 14px;
-    height: auto ;
-    padding: 16px 0;
-    display: block;
+
+.plus-icon {
+  font-size: 20px;
+  user-select: none;
+}
+
+/* Initially hidden list */
+.footer-nav {
+  list-style: none;
+  padding: 10px 0 0;
+  margin: 0;
+  display: none;
+}
+
+.footer-nav li {
+  font-size: 14px;
+  padding: 6px 0;
+  color: #ccc;
+}
+
+.footer-nav li:hover {
+  color: white;
 }
 
 
@@ -723,10 +737,12 @@
     .side-bar {
         display: none;
     }
-    .rank-main{
+
+    .rank-main {
         display: none;
     }
-    .filter-box{
+
+    .filter-box {
         display: none;
     }
 }
@@ -771,7 +787,8 @@
         width: 100%;
         height: 100%;
     }
-/* 
+
+    /* 
     .main-products-one img {
         width: 188.81px;
         height: 188.81px;
@@ -795,10 +812,12 @@
     .products-content {
         padding: 14px 64px 64px 20px;
     }
-    .filter-box{
+
+    .filter-box {
         display: block;
     }
-    .rank-main{
+
+    .rank-main {
         display: flex;
     }
 
@@ -807,10 +826,28 @@
     }
 
 }
-
 @media (min-width: 1025px) {
+  .footer-links-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+  }
 
-    
-    
+  .footer-column {
+    border: none;
+    padding: 0;
+  }
+
+  .footer-header {
+    cursor: default;
+  }
+
+  .footer-nav {
+    display: block !important;
+  }
+
+  .plus-icon {
+    display: none;
+  }
 }
 
