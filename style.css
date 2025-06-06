@@ -423,6 +423,17 @@
     padding: 16px 36px 16px 0;
     line-height: 20px;
 }
+.footer-nav{
+    list-style: none;
+    height: auto ;
+}
+.footer-nav li{
+    color: #828282;
+    font-size: 14px;
+    height: auto ;
+    padding: 16px 0;
+    display: block;
+}
 
 
 .support-link {
@@ -795,5 +806,11 @@
         flex: 1;
     }
 
+}
+
+@media (min-width: 1025px) {
+
+    
+    
 }
 
