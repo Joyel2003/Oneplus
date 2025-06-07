@@ -403,51 +403,57 @@
 }
 
 .footer-links-section {
-  background: #000;
-  color: #fff;
-  padding: 20px;
+    background: #000;
+    color: #fff;
+    padding: 20px;
 }
 
 /* Footer columns default to stacked (mobile) */
 .footer-column {
-  border-bottom: 1px solid #333;
-  padding: 12px 0;
+    border-bottom: 1px solid #333;
+    padding: 12px 0;
 }
 
 .footer-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
 
 .footer-header h4 {
     font-family: Oneplus;
-  font-size: 16px;
-  margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    /* margin: 0; */
+}
+
+.footer-nav li {
+    font-family: Oneplus;
 }
 
 .plus-icon {
-  font-size: 20px;
-  user-select: none;
+    font-size: 20px;
+    user-select: none;
 }
 
 /* Initially hidden list */
 .footer-nav {
-  list-style: none;
-  padding: 10px 0 0;
-  margin: 0;
-  display: none;
+    list-style: none;
+    padding: 10px 0 0;
+    margin: 0;
+    display: none;
 }
 
 .footer-nav li {
-  font-size: 14px;
-  padding: 6px 0;
-  color: #ccc;
+    font-family: Oneplus;
+    font-size: 14px;
+    padding: 6px 0;
+    color: #ccc;
 }
 
 .footer-nav li:hover {
-  color: white;
+    color: white;
 }
 
 
@@ -827,28 +833,28 @@
     }
 
 }
+
 @media (min-width: 1025px) {
-  .footer-links-section {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 40px;
-  }
+    .footer-links-section {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 40px;
+    }
 
-  .footer-column {
-    border: none;
-    padding: 0;
-  }
+    .footer-column {
+        border: none;
+        padding: 0;
+    }
 
-  .footer-header {
-    cursor: default;
-  }
+    .footer-header {
+        cursor: default;
+    }
 
-  .footer-nav {
-    display: block !important;
-  }
+    .footer-nav {
+        display: block !important;
+    }
 
-  .plus-icon {
-    display: none;
-  }
+    .plus-icon {
+        display: none;
+    }
 }
-
