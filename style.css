@@ -427,7 +427,7 @@
 
 .footer-header h4 {
     font-family: Oneplus;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     /* margin: 0; */
 }
@@ -451,7 +451,7 @@
 
 .footer-nav li {
     font-family: Oneplus;
-    font-size: 14px;
+    font-size: 12px;
     padding: 6px 0;
     color: #ccc;
 }
@@ -857,6 +857,7 @@
         cursor: default;
         align-items: flex-start;
     }
+
     .footer-nav {
         display: block;
     }
