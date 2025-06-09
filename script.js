@@ -86,14 +86,26 @@ document.addEventListener('DOMContentLoaded', () => {
   rankSelect.addEventListener("change", applyFiltersAndSort);
 });
 
-document.querySelectorAll('.footer-header').forEach(header => {
-  header.addEventListener('click', () => {
-    const list = header.nextElementSibling;
-    const plus = header.querySelector('.plus-icon');
-    const isOpen = list.style.display === 'block';
+// document.querySelectorAll('.footer-header').forEach(header => {
+//   header.addEventListener('click', () => {
+//     const list = header.nextElementSibling;
+//     const plus = header.querySelector('.plus-icon');
+//     const isOpen = list.style.display === 'block';
 
-    list.style.display = isOpen ? 'none' : 'block';
+//     list.style.display = isOpen ? 'none' : 'block';
 
-    plus.textContent = isOpen ? '+' : '-';
+//     plus.textContent = isOpen ? '+' : '-';
+//   });
+// });
+
+const toggles = document.querySelectorAll(".footer-toggle");
+toggles.forEach(button => {
+  button.addEventListener("click", () => {
+    const listId = button.getAttribute("aria-controls");
+    const list = document.getElementById(listId);
+    const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+    button.setAttribute("aria-expanded", !isExpanded);
+    list.hidden = isExpanded;
   });
 });
