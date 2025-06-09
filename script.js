@@ -98,14 +98,19 @@ document.addEventListener('DOMContentLoaded', () => {
 //   });
 // });
 
-const toggles = document.querySelectorAll(".footer-toggle");
-toggles.forEach(button => {
-  button.addEventListener("click", () => {
-    const listId = button.getAttribute("aria-controls");
-    const list = document.getElementById(listId);
-    const isExpanded = button.getAttribute("aria-expanded") === "true";
 
-    button.setAttribute("aria-expanded", !isExpanded);
-    list.hidden = isExpanded;
+document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".footer-toggle");
+
+    toggles.forEach(button => {
+      button.addEventListener("click", () => {
+        const listId = button.getAttribute("aria-controls");
+        const list = document.getElementById(listId);
+        const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+        button.setAttribute("aria-expanded", String(!isExpanded));
+        list.hidden = isExpanded;
+      });
+    });
   });
-});
+
