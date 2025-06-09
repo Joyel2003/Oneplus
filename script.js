@@ -94,6 +94,6 @@ document.querySelectorAll('.footer-header').forEach(header => {
 
     list.style.display = isOpen ? 'none' : 'block';
 
-    plus.textContent = isOpen ? '+' : '–';
+    plus.textContent = isOpen ? '+' : '-';
   });
 });
